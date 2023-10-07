@@ -1,0 +1,13 @@
+<h2>
+  <%= @article.title %>
+  <%= link_to edit_article_path(@article), class: "btn-link" do %>
+    <i class="fas fa-pencil-alt"></i>
+  <% end %>
+  <%= link_to article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Delete #{@article.title}?" }, class: "btn-link" do %>
+    <i class="fas fa-trash"></i>
+  <% end %>
+</h2>
+
+<div class="paragraph-container">
+  <p><%= @article.content %></p>
+</div>

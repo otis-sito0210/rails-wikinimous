@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+ h2 a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a31de;
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+  color:black
+}
+
+p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+}
+
+.paragraph-container {
+  max-width: 800px;
+  margin: 0 left;
+}
+
+
+.paragraph-container p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+}
+
